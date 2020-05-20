@@ -1,0 +1,14 @@
+TUGAS LAB PBW
+
+Berikut adalah Website Apple tahun 1990. Terlihat buruk rupa. Tugas kalian adalah Ubahlah atau design ulang website Apple tersebut dengan menggunakan HTML, CSS dan Javascript. Sesuaikan konten dengan design kalian semenarik mungkin.
+
+Yang harus di tampilkan
+1. Title (clear)
+2. Menu (clear)
+3. Berita 
+4. Banner (clear)
+5. Tanggal (clear)
+6. Tombol Find it
+
+NIlai berdasarkan design dan kerapian kode yang kalian buat.
+Diperbolehkan menggunakan Library bootstrap, Jquery dll nya

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <title>Apple</title>
+</head>
+
+<body onload="displayTime();" class="bg-white font-sans leading-normal tracking-normal">
+    <!-- NAVBAR COMPONENT -->
+    <nav class="mb-4 flex flex-wrap items-center justify-between p-4 bg-white shadow-md">
+        <div class="flex items-center flex-shrink-0 mr-6 text-black">
+            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" viewBox="0 0 1000 1187.198"
+                version="1.1" height="24" id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="Apple_1998.svg">
+                <path
+                    d="m 979.04184,925.18785 c -17.95397,41.47737 -39.20563,79.65705 -63.82824,114.75895 -33.56298,47.8528 -61.04356,80.9761 -82.22194,99.3698 -32.83013,30.192 -68.00529,45.6544 -105.67203,46.5338 -27.04089,0 -59.6512,-7.6946 -97.61105,-23.3035 -38.08442,-15.5358 -73.08371,-23.2303 -105.08578,-23.2303 -33.56296,0 -69.55888,7.6945 -108.06101,23.2303 -38.5608,15.6089 -69.62484,23.7432 -93.37541,24.5493 -36.12049,1.5389 -72.1237,-14.3632 -108.06101,-47.7796 -22.93711,-20.0059 -51.62684,-54.3017 -85.99592,-102.8874 C 92.254176,984.54592 61.937588,924.38175 38.187028,855.7902 12.750995,781.70252 0,709.95986 0,640.50361 0,560.94181 17.191859,492.32094 51.626869,434.81688 78.689754,388.62753 114.69299,352.19192 159.75381,325.44413 c 45.06086,-26.74775 93.74914,-40.37812 146.18212,-41.25019 28.68971,0 66.3125,8.8744 113.06613,26.31542 46.62174,17.49964 76.55727,26.37404 89.68198,26.37404 9.8124,0 43.06758,-10.37669 99.4431,-31.06405 53.31237,-19.18512 98.30724,-27.12887 135.16787,-23.99975 99.8828,8.06098 174.92313,47.43518 224.82789,118.37174 -89.33023,54.12578 -133.51903,129.93556 -132.63966,227.18753 0.8061,75.75115 28.28668,138.78795 82.2952,188.8393 24.47603,23.23022 51.81008,41.18421 82.22186,53.93522 -6.59525,19.12648 -13.557,37.44688 -20.95846,55.03446 z M 749.96366,23.751237 c 0,59.37343 -21.69138,114.810233 -64.92748,166.121963 -52.17652,60.99961 -115.28658,96.24803 -183.72426,90.68597 -0.87204,-7.12298 -1.37769,-14.61967 -1.37769,-22.49743 0,-56.99843 24.81315,-117.99801 68.87738,-167.873453 21.99909,-25.25281 49.978,-46.25018 83.90738,-63.00018 C 686.57507,10.688027 718.59913,1.5631274 748.71783,5.2734376e-4 749.59727,7.9378274 749.96366,15.875627 749.96366,23.750467 Z"
+                    id="path4" inkscape:connector-curvature="0" />
+            </svg>
+            <span class="ml-2 text-xl font-semibold tracking-tight">Apple</span>
+        </div>
+        <div class="flex-grow block w-full lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a href="#" class="block mt-4 mr-4 text-gray-700 lg:inline-block lg:mt-0 hover:text-blue-400">
+                    Home
+                </a>
+                <a href="#" class="block mt-4 mr-4 text-gray-700 lg:inline-block lg:mt-0 hover:text-blue-400">
+                    Product
+                </a>
+                <a href="#" class="block mt-4 text-gray-700 lg:inline-block lg:mt-0 hover:text-blue-400">
+                    About
+                </a>
+            </div>
+            <div>
+                <a id="time" href="#"
+                    class="inline-block px-4 py-2 mt-4 text-lg leading-none text-gray-600 rounded shadow-inner lg:mt-0 "></a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR COMPONENT -->
+
+    <!-- BANNER COMPONENT -->
+    <div>
+        <div class="flex">
+            <img class="m-auto h-54 w-auto object-cover sm:h-72 md:h-96 lg:w-auto"
+                src="https://uploads.toptal.io/blog/image/124681/toptal-blog-image-1510666064653-828796fe3241dff283a0e989b917cdbc.png" />
+        </div>
+    </div>
+    <!-- END BANNER COMPONENT -->
+
+    <!-- Carousel Component -->
+    <div class="carousel relative shadow bg-white">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="carousel-item absolute opacity-0">
+                <img class="block h-full w-full object-cover"
+                    src="https://www.theapplepost.com/wp-content/uploads/2018/04/Apple-Palo-Alto-2-1280x720.jpg" />
+            </div>
+            <label for="carousel-3"
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2"
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0">
+                <img class="block h-full w-full object-cover"
+                    src="https://i.ytimg.com/vi/kmz6e9TwSeU/maxresdefault.jpg" />
+            </div>
+            <label for="carousel-1"
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3"
+                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0">
+                <img class="block h-full w-full object-cover"
+                    src="https://i.ytimg.com/vi/K0VWwY6MR0k/maxresdefault.jpg" />
+            </div>
+            <label for="carousel-2"
+                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1"
+                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <!--End Carousel Component -->
+
+    <!-- Main Component -->
+    <main>
+        <!--content -->
+        <div class="px-8 pt-8 pb-2">
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">May 12, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">Biggest update to Logic</h2>
+                        <p class="text-xs">
+                            Cupertino, California — Apple today unveiled a major update to Logic Pro X with a
+                            professional version of Live Loops, a completely redesigned sampling workflow, and new
+                            beat-making tools. With its collection of powerful creative features, Logic Pro X 10.5 will
+                            be a massive release for all musicians, including those producing electronic music.
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">May 7, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">Apple awards $10 million</h2>
+                        <p class="text-xs">
+                            Cupertino, California — Apple today announced it is awarding $10 million from its Advanced
+                            Manufacturing Fund to COPAN Diagnostics, a market leader in sample collection kits that play
+                            a critical role in COVID-19 testing. This funding will allow COPAN Diagnostics to rapidly
+                            accelerate their supply of sample collection kits for hospitals....
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">May 5, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">Worldwide Developers Conference</h2>
+                        <p class="text-xs">
+                            Cupertino, California — Apple today announced it will host its annual Worldwide Developers
+                            Conference virtually, beginning June 22, in the Apple Developer app and on the Apple
+                            Developer website for free for all developers. The company also announced the Swift Student
+                            Challenge, an opportunity for student developers to...
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">May 4, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">Apple updates 13-inch MacBook Pro</h2>
+                        <p class="text-xs">
+                            Cupertino, California — Apple today updated the 13-inch MacBook Pro with the new Magic
+                            Keyboard for the best typing experience ever on a Mac notebook and doubled the storage
+                            across all standard configurations, delivering even more value to the most popular MacBook
+                            Pro. The new lineup also offers 10th-generation processors...
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">April 30, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">Second Quarter Results</h2>
+                        <p class="text-xs">
+                            Cupertino, California — April 30, 2020 — Apple today announced financial results for its
+                            fiscal 2020 second quarter ended March 28, 2020. The Company posted quarterly revenue of
+                            $58.3 billion, an increase of 1 percent from the year-ago quarter, and quarterly earnings
+                            per diluted share of $2.55, up 4 percent. International sales accounted for 62 percent...
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden hover:bg-green-100 border border-gray-200 p-3">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-xs">April 15, 2020</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">A powerful new smartphone</h2>
+                        <p class="text-xs">
+                            Cupertino, California — Apple today announced the second-generation iPhone SE, a powerful
+                            new iPhone featuring a 4.7-inch Retina HD display, paired with Touch ID for industry-leading
+                            security. iPhone SE comes in a compact design, reinvented from the inside out, and is the
+                            most affordable iPhone. The new iPhone SE is powered by the...
+                        </p>
+
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="text-blue-400 uppercase font-bold text-sm" href="#">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /End content-->
+    </main>
+    <!-- END Main Component -->
+
+    <!-- CTA Component -->
+    <div
+        class="max-w-screen-xl mx-auto my-8 py-8 px-4 sm:px-6 lg:py-8 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            Ready to try it?
+            <br />
+            <span class="text-blue-500">Find your apple product now</span>
+        </h2>
+        <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+            <div class="inline-flex rounded-md shadow">
+                <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    Find It
+                </a>
+            </div>
+            <div class="ml-3 inline-flex rounded-md shadow">
+                <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-white hover:text-blue-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CTA Component -->
+
+    <!-- footer -->
+    <!-- component -->
+    <footer class="footer bg-blue-500 shadow-inner relative pt-1 border-b-2 border-blue-700">
+        <div class="container mx-auto px-6">
+            <div class="sm:flex sm:mt-8">
+                <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-evenly">
+                    <div class="flex flex-col">
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Product
+                                Information</a></span>
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Customer
+                                Support</a></span>
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Technology &
+                                Research</a></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="my-2"><a href="#" class="text-white text-md hover:text-blue-300">Developer
+                                World</a></span>
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Groups &
+                                Interests</a></span>
+                        <span class="my-2"><a href="#" class="text-white text-md hover:text-blue-300">Resources
+                                Online</a></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Latest
+                                News</a></span>
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">Apple Sites
+                                Worldwide</a></span>
+                        <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-300">About
+                                Apple</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6">
+            <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+                <div class="sm:w-2/3 text-center py-6">
+                    <p class="text-sm text-white font-bold mb-2">© 2020 by Rizki Maulana</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
